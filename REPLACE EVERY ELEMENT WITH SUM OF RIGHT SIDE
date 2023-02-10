@@ -1,0 +1,16 @@
+# include<stdio.h>
+int main(){
+    int arr[5],sum=0;;
+   
+    for(int start =0;start<5;start++){
+        scanf("%d",&arr[start]);
+        sum +=arr[start];
+    }
+    int sub=sum;
+    for(int start=0;start<5;start++){
+        sub-=arr[start];
+        
+        printf("%d  ",sub);
+    }
+    
+}
