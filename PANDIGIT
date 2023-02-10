@@ -1,0 +1,27 @@
+# include<stdio.h>
+int main(){
+    int arr[]={1,2,3,4,5,6,7,7,8};
+    //int size=sizeof(arr)/sizeof(arr[0]);
+    int hash[10]={0};
+    int digit;
+    
+    for(int start=1;start<=9;start++){
+        digit=arr%10;
+        //int position = arr[start];
+        hash[digit]++;
+        arr/=10;
+    }
+    int start;
+    for(start=1;start<=9;start++){
+        if(hash[start]==0){
+            break;
+        }
+    }
+    if(start==10){
+        printf("p");
+    }
+    else{
+        printf("no");
+    }
+    
+}
